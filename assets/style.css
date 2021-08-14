@@ -154,8 +154,8 @@ header .container-header{
 /* CONTAINER CARDS */
 
 .container-cards{
-  width: 1242px;
-  height: 914px;
+  width: 124.2rem;
+  height: 91.4rem;
 
   align-self: center;
 
@@ -168,8 +168,8 @@ header .container-header{
 /* CARD */
 
 .card{
-  width: 340px;
-  height: 423px;
+  width: 34rem;
+  height: 42.3rem;
   background-color: var(--white);
 
   margin-right: 111px;
@@ -202,8 +202,8 @@ header .container-header{
 }
 
 .card-color{
-  width: 340px;
-  height: 222px;
+  width: 34rem;
+  height: 22.2rem;
 }
 
 .red{
@@ -257,7 +257,7 @@ header .container-header{
 
 .container-contact form input, textarea{
   padding-left: 21px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: 'Lato-Regular';
   color: rgba(110, 114, 117, 0,74);
   border-radius: 6px;
@@ -270,14 +270,128 @@ header .container-header{
 }
 
 .container-contact form textarea{
-  height: 165px;
+  height: 16.5rem;
   padding-top: 21px;
   resize: none;
   word-break: break-word;
 }
 
 .container-contact form button{
-  width: 471px;
-  height: 50px;
+  width: 47.1rem;
+  height: 5rem;
   margin-top: 30px;
+}
+
+
+/* MEDIAS QUERIES */
+@media only screen and (min-width: 320px) and (max-width: 900px)  {
+
+  body, header, header .container-header,
+  .container-text-header, .container-image-header,
+  .container-contact{
+    width: 100%;
+  }
+
+  header{
+    height: 800px;
+  }
+
+  header .container-header{
+    margin: 0px;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .container-text-header{
+    width: 100%;
+    margin-top: 55px;
+    padding: 0px 20px;
+    height: auto;
+  }
+
+  .container-text-header h2{
+    font-size: 3.2rem;
+  }
+
+  .container-text-header span{
+    font-size: 1.8rem;
+  }
+
+  .container-text-header button{
+    margin-top: 3.2rem;
+  }
+
+  .container-image-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 11.4rem;
+    margin-bottom: 8.87rem;
+  }
+
+  .container-image-header img{
+    width: 95%;
+    height: 25.183rem;
+  }
+
+  .container-cards{
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    margin: 7.5rem 0rem;
+  } 
+
+  .card{
+    width: 30rem;
+    margin: 3rem 1rem;
+  }
+
+  .card-color{
+    width: 30rem;
+  }
+
+  .container-contact{
+    height: 70rem;
+  }
+
+  .container-contact form input, textarea{
+    width: 80%;
+  }
+
+  .container-contact form button{
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 900px) {
+
+  header{
+    height: auto;
+  }
+
+  header .container-header{
+      flex-direction: row;
+      padding: 2rem;
+  }
+
+  .container-text-header{
+     display: flex;
+     align-self: center;
+     justify-content: center;
+  }
+
+   .container-cards{
+    grid-template-columns: repeat(2,1fr);
+  } 
+
+  .container-image-header{
+    display: flex;
+    margin-top: 11.4rem;
+    margin-bottom: 8.87rem;
+  }
+
+  .container-image-header img{
+    width: 95%;
+    height: 25.183rem;
+  }
 }
